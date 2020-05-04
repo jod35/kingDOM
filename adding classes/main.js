@@ -1,7 +1,19 @@
 const heading=document.querySelector('h1');
 
-const press_me=document.querySelector('#press');
+const red=document.getElementById('red');
+const blue=document.getElementById('blue');
+const clear=document.getElementById('clear');
 
-press_me.addEventListener('click',()=>{
-    heading.classList.add('head');
+red.addEventListener('click',()=>{
+    heading.classList.add('red');
+});
+
+
+blue.addEventListener('click',()=>{
+   
+   heading.classList.add('blue')
+});
+
+clear.addEventListener('click',()=>{
+    heading.classList.remove('red','blue');
 });
